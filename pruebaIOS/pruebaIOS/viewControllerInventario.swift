@@ -17,7 +17,7 @@ class ViewControllerInventario: UIViewController {
     @IBOutlet weak var steeperMZ: UIStepper!
     @IBOutlet weak var labelFrj: UILabel!
     @IBOutlet weak var steeprFr: UIStepper!
-    
+    @IBOutlet weak var totalProductsLabel: UILabel!
     
     @IBAction func changeValueFR(_ sender: UIStepper) {
         labelFrj.text = Int(sender.value).description
@@ -41,6 +41,7 @@ class ViewControllerInventario: UIViewController {
         steeperMZ.maximumValue = 2000
         steeperMZ.minimumValue = 0
         steeperMZ.autorepeat = true
+       
     }
     
 }

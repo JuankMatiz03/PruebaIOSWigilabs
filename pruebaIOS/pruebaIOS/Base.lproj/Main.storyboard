@@ -278,6 +278,7 @@
                         <outlet property="labelManzana" destination="QQo-Qx-VIS" id="Ebq-9d-sHm"/>
                         <outlet property="steeperMZ" destination="3Vy-WK-shD" id="qat-5H-8Ge"/>
                         <outlet property="steeprFr" destination="J2c-Av-nMx" id="Gip-AC-xJx"/>
+                        <outlet property="totalProductsLabel" destination="5zG-ty-qWj" id="NYY-UT-mgy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0o-8X-19b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
