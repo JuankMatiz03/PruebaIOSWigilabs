@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Products-->
         <scene sceneID="mU6-Fh-9uv">
             <objects>
-                <viewController id="fqJ-9D-6cS" sceneMemberID="viewController">
+                <viewController id="fqJ-9D-6cS" customClass="viewControllerProducts" customModule="pruebaIOS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s8e-Bd-AiC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,12 +25,12 @@
                                     <constraint firstAttribute="width" constant="247" id="H8c-AZ-AiX"/>
                                     <constraint firstAttribute="height" constant="45" id="gxM-a6-ZGg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.39409715290000003" green="0.68097444640000004" blue="0.96916640229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TQ1-Sc-LOS" firstAttribute="top" secondItem="3Fj-mX-HhX" secondAttribute="top" constant="13" id="Rxp-J8-bup"/>
                             <constraint firstItem="mzt-Bg-mDz" firstAttribute="trailing" secondItem="3Fj-mX-HhX" secondAttribute="trailing" id="SOE-Wy-w4f"/>
@@ -43,6 +43,9 @@
                         <viewLayoutGuide key="safeArea" id="3Fj-mX-HhX"/>
                     </view>
                     <navigationItem key="navigationItem" id="BTw-pe-On2"/>
+                    <connections>
+                        <outlet property="tableList" destination="mzt-Bg-mDz" id="siP-Yb-XT8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3l-t3-Vym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

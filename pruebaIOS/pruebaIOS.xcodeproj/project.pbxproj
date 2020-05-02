@@ -15,6 +15,9 @@
 		724937BE245D182A0052FA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724937BC245D182A0052FA7F /* LaunchScreen.storyboard */; };
 		724937C9245D182A0052FA7F /* pruebaIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724937C8245D182A0052FA7F /* pruebaIOSUITests.swift */; };
 		72746642245DC0E10021FA7E /* productsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72746641245DC0E10021FA7E /* productsList.storyboard */; };
+		72746646245DCD460021FA7E /* viewControllerProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746645245DCD460021FA7E /* viewControllerProducts.swift */; };
+		7274664A245DDC020021FA7E /* cellProductsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746648245DDC020021FA7E /* cellProductsListTableViewCell.swift */; };
+		7274664B245DDC020021FA7E /* cellProductsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		724937C8245D182A0052FA7F /* pruebaIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaIOSUITests.swift; sourceTree = "<group>"; };
 		724937CA245D182A0052FA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72746641245DC0E10021FA7E /* productsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = productsList.storyboard; sourceTree = "<group>"; };
+		72746645245DCD460021FA7E /* viewControllerProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerProducts.swift; sourceTree = "<group>"; };
+		72746648245DDC020021FA7E /* cellProductsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellProductsListTableViewCell.swift; sourceTree = "<group>"; };
+		72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellProductsListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		724937B0245D18230052FA7F /* pruebaIOS */ = {
 			isa = PBXGroup;
 			children = (
+				72746647245DDBAF0021FA7E /* Cellgbl */,
 				724937B1245D18230052FA7F /* AppDelegate.swift */,
 				724937B3245D18230052FA7F /* SceneDelegate.swift */,
 				724937B5245D18230052FA7F /* ViewController.swift */,
@@ -89,6 +96,7 @@
 				724937BC245D182A0052FA7F /* LaunchScreen.storyboard */,
 				724937BF245D182A0052FA7F /* Info.plist */,
 				72746641245DC0E10021FA7E /* productsList.storyboard */,
+				72746645245DCD460021FA7E /* viewControllerProducts.swift */,
 			);
 			path = pruebaIOS;
 			sourceTree = "<group>";
@@ -100,6 +108,15 @@
 				724937CA245D182A0052FA7F /* Info.plist */,
 			);
 			path = pruebaIOSUITests;
+			sourceTree = "<group>";
+		};
+		72746647245DDBAF0021FA7E /* Cellgbl */ = {
+			isa = PBXGroup;
+			children = (
+				72746648245DDC020021FA7E /* cellProductsListTableViewCell.swift */,
+				72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */,
+			);
+			path = Cellgbl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +202,7 @@
 			files = (
 				724937BE245D182A0052FA7F /* LaunchScreen.storyboard in Resources */,
 				724937BB245D182A0052FA7F /* Assets.xcassets in Resources */,
+				7274664B245DDC020021FA7E /* cellProductsListTableViewCell.xib in Resources */,
 				72746642245DC0E10021FA7E /* productsList.storyboard in Resources */,
 				724937B9245D18230052FA7F /* Main.storyboard in Resources */,
 			);
@@ -206,7 +224,9 @@
 			files = (
 				724937B6245D18230052FA7F /* ViewController.swift in Sources */,
 				724937B2245D18230052FA7F /* AppDelegate.swift in Sources */,
+				72746646245DCD460021FA7E /* viewControllerProducts.swift in Sources */,
 				724937B4245D18230052FA7F /* SceneDelegate.swift in Sources */,
+				7274664A245DDC020021FA7E /* cellProductsListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
