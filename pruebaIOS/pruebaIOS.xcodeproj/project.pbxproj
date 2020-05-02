@@ -18,6 +18,7 @@
 		72746646245DCD460021FA7E /* viewControllerProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746645245DCD460021FA7E /* viewControllerProducts.swift */; };
 		7274664A245DDC020021FA7E /* cellProductsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746648245DDC020021FA7E /* cellProductsListTableViewCell.swift */; };
 		7274664B245DDC020021FA7E /* cellProductsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */; };
+		72746653245E19BF0021FA7E /* viewControllerInventario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746652245E19BF0021FA7E /* viewControllerInventario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		72746645245DCD460021FA7E /* viewControllerProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerProducts.swift; sourceTree = "<group>"; };
 		72746648245DDC020021FA7E /* cellProductsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellProductsListTableViewCell.swift; sourceTree = "<group>"; };
 		72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellProductsListTableViewCell.xib; sourceTree = "<group>"; };
+		72746652245E19BF0021FA7E /* viewControllerInventario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerInventario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				724937BF245D182A0052FA7F /* Info.plist */,
 				72746641245DC0E10021FA7E /* productsList.storyboard */,
 				72746645245DCD460021FA7E /* viewControllerProducts.swift */,
+				72746652245E19BF0021FA7E /* viewControllerInventario.swift */,
 			);
 			path = pruebaIOS;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				72746646245DCD460021FA7E /* viewControllerProducts.swift in Sources */,
 				724937B4245D18230052FA7F /* SceneDelegate.swift in Sources */,
 				7274664A245DDC020021FA7E /* cellProductsListTableViewCell.swift in Sources */,
+				72746653245E19BF0021FA7E /* viewControllerInventario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
