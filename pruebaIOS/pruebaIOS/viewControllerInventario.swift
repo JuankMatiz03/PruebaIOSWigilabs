@@ -21,14 +21,17 @@ class ViewControllerInventario: UIViewController {
     
     @IBAction func changeValueFR(_ sender: UIStepper) {
         labelFrj.text = Int(sender.value).description
+        addValuesToASumAndPutItIntoTheLabel()
     }
     
     @IBAction func changeValueManzanas(_ sender: UIStepper) {
         labelManzana.text = Int(sender.value).description
+        addValuesToASumAndPutItIntoTheLabel()
     }
     
     @IBAction func changeValueFresas(_ sender: UIStepper) {
         labelFresas.text = Int(sender.value).description
+        addValuesToASumAndPutItIntoTheLabel()
     }
     
     override func viewDidLoad() {
@@ -41,7 +44,20 @@ class ViewControllerInventario: UIViewController {
         steeperMZ.maximumValue = 2000
         steeperMZ.minimumValue = 0
         steeperMZ.autorepeat = true
-       
+        steeprFr.autorepeat = true
+        steeprFr.maximumValue = 2000
+        steeprFr.minimumValue = 0
+        steeprFr.wraps = true
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
+    func addValuesToASumAndPutItIntoTheLabel() {
+        let summe : Int = Int(Stepper.value + steeperMZ.value + steeprFr.value)
+        totalProductsLabel.text = summe.description
     }
     
 }
