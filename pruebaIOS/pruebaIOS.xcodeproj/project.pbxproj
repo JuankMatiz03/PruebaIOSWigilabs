@@ -14,6 +14,7 @@
 		724937BB245D182A0052FA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724937BA245D182A0052FA7F /* Assets.xcassets */; };
 		724937BE245D182A0052FA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724937BC245D182A0052FA7F /* LaunchScreen.storyboard */; };
 		724937C9245D182A0052FA7F /* pruebaIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724937C8245D182A0052FA7F /* pruebaIOSUITests.swift */; };
+		72746642245DC0E10021FA7E /* productsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72746641245DC0E10021FA7E /* productsList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		724937C4245D182A0052FA7F /* pruebaIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724937C8245D182A0052FA7F /* pruebaIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaIOSUITests.swift; sourceTree = "<group>"; };
 		724937CA245D182A0052FA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72746641245DC0E10021FA7E /* productsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = productsList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				724937BA245D182A0052FA7F /* Assets.xcassets */,
 				724937BC245D182A0052FA7F /* LaunchScreen.storyboard */,
 				724937BF245D182A0052FA7F /* Info.plist */,
+				72746641245DC0E10021FA7E /* productsList.storyboard */,
 			);
 			path = pruebaIOS;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				724937BE245D182A0052FA7F /* LaunchScreen.storyboard in Resources */,
 				724937BB245D182A0052FA7F /* Assets.xcassets in Resources */,
+				72746642245DC0E10021FA7E /* productsList.storyboard in Resources */,
 				724937B9245D18230052FA7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
