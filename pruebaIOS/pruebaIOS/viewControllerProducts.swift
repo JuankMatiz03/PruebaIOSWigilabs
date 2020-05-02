@@ -24,7 +24,6 @@ class viewControllerProducts: UIViewController{
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableList.dataSource = self
         tableList.delegate = self
         tableList.register(UINib(nibName: "cellProductsListTableViewCell", bundle: nil), forCellReuseIdentifier: "cellProductsListTableViewCell")
