@@ -27,6 +27,7 @@ class viewControllerProducts: UIViewController{
         tableList.dataSource = self
         tableList.delegate = self
         tableList.register(UINib(nibName: "cellProductsListTableViewCell", bundle: nil), forCellReuseIdentifier: "cellProductsListTableViewCell")
+
     }
 }
 
@@ -47,6 +48,10 @@ extension viewControllerProducts: UITableViewDataSource {
         (cell as? cellProductsListTableViewCell)?.setUpCellPer(precio: "35", disponible: "32", nombreProd: dataSource[indexPath.row],  idProducto: "14")
         cell.backgroundColor = UIColor.white
         return cell
+    }
+    
+    @IBAction func fromBackView (segue: UIStoryboardSegue!) {
+        
     }
     
 }

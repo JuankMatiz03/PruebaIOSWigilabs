@@ -42,7 +42,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Fj-mX-HhX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Productos" leftItemsSupplementBackButton="YES" id="BTw-pe-On2"/>
+                    <navigationItem key="navigationItem" title="Productos" id="BTw-pe-On2">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="WkT-m5-4ud">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" id="0AS-Wr-CSc">
+                                <rect key="frame" x="16" y="11" width="106" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="return" catalog="system">
+                                    <string key="title" base64-UTF8="YES">
+CQk
+</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="medium" weight="semibold"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableList" destination="mzt-Bg-mDz" id="siP-Yb-XT8"/>
                     </connections>
@@ -70,4 +84,7 @@
             <point key="canvasLocation" x="-180" y="73.313343328335833"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="return" catalog="system" width="64" height="50"/>
+    </resources>
 </document>
