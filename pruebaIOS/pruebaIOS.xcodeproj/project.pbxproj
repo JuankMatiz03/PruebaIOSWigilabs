@@ -19,6 +19,8 @@
 		7274664A245DDC020021FA7E /* cellProductsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746648245DDC020021FA7E /* cellProductsListTableViewCell.swift */; };
 		7274664B245DDC020021FA7E /* cellProductsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */; };
 		72746653245E19BF0021FA7E /* viewControllerInventario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746652245E19BF0021FA7E /* viewControllerInventario.swift */; };
+		729ED026245F430C007CAA4D /* carritoProducts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729ED025245F430C007CAA4D /* carritoProducts.storyboard */; };
+		729ED028245F4353007CAA4D /* carritoProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729ED027245F4353007CAA4D /* carritoProductsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		72746648245DDC020021FA7E /* cellProductsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellProductsListTableViewCell.swift; sourceTree = "<group>"; };
 		72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellProductsListTableViewCell.xib; sourceTree = "<group>"; };
 		72746652245E19BF0021FA7E /* viewControllerInventario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerInventario.swift; sourceTree = "<group>"; };
+		729ED025245F430C007CAA4D /* carritoProducts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = carritoProducts.storyboard; sourceTree = "<group>"; };
+		729ED027245F4353007CAA4D /* carritoProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carritoProductsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				72746641245DC0E10021FA7E /* productsList.storyboard */,
 				72746645245DCD460021FA7E /* viewControllerProducts.swift */,
 				72746652245E19BF0021FA7E /* viewControllerInventario.swift */,
+				729ED025245F430C007CAA4D /* carritoProducts.storyboard */,
+				729ED027245F4353007CAA4D /* carritoProductsViewController.swift */,
 			);
 			path = pruebaIOS;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				7274664B245DDC020021FA7E /* cellProductsListTableViewCell.xib in Resources */,
 				72746642245DC0E10021FA7E /* productsList.storyboard in Resources */,
 				724937B9245D18230052FA7F /* Main.storyboard in Resources */,
+				729ED026245F430C007CAA4D /* carritoProducts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +234,7 @@
 			files = (
 				724937B6245D18230052FA7F /* ViewController.swift in Sources */,
 				724937B2245D18230052FA7F /* AppDelegate.swift in Sources */,
+				729ED028245F4353007CAA4D /* carritoProductsViewController.swift in Sources */,
 				72746646245DCD460021FA7E /* viewControllerProducts.swift in Sources */,
 				724937B4245D18230052FA7F /* SceneDelegate.swift in Sources */,
 				7274664A245DDC020021FA7E /* cellProductsListTableViewCell.swift in Sources */,
