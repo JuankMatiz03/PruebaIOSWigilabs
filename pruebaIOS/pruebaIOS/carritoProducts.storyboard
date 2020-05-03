@@ -45,7 +45,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="T67-oE-TRS" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Fi0-sl-0ze"/>
+                                    <segue destination="T67-oE-TRS" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Fi0-sl-0ze"/>
                                 </connections>
                             </button>
                         </subviews>

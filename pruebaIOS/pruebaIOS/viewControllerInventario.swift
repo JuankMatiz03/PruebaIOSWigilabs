@@ -11,32 +11,38 @@ import UIKit
 
 class ViewControllerInventario: UIViewController {
 
-    @IBOutlet weak var Stepper: UIStepper!
-    @IBOutlet weak var labelFresas: UILabel!
-    @IBOutlet weak var labelManzana: UILabel!
-    @IBOutlet weak var steeperMZ: UIStepper!
-    @IBOutlet weak var labelFrj: UILabel!
-    @IBOutlet weak var steeprFr: UIStepper!
-    @IBOutlet weak var totalProductsLabel: UILabel!
+     private var prodConter = [
+        "Manzanas",
+        "Peras",
+        "Bananos"
+    ]
     
-    @IBAction func changeValueFR(_ sender: UIStepper) {
+     private var valueProd = [
+        "4000",
+        "5000",
+        "19000"
+    ]
+    
+    @IBOutlet weak var tableInventario: UITableView!
+    //@IBOutlet weak var Stepper: UIStepper!
+    //@IBOutlet weak var labelFresas: UILabel!
+    //@IBOutlet weak var labelManzana: UILabel!
+    //@IBOutlet weak var steeperMZ: UIStepper!
+    //@IBOutlet weak var labelFrj: UILabel!
+    //@IBOutlet weak var steeprFr: UIStepper!
+    //@IBOutlet weak var totalProductsLabel: UILabel!
+    
+    /*
+     @IBAction func changeValueFR(_ sender: UIStepper) {
         labelFrj.text = Int(sender.value).description
-        addValuesToASumAndPutItIntoTheLabel()
+        //addValuesToASumAndPutItIntoTheLabel()
     }
-    
-    @IBAction func changeValueManzanas(_ sender: UIStepper) {
-        labelManzana.text = Int(sender.value).description
-        addValuesToASumAndPutItIntoTheLabel()
-    }
-    
-    @IBAction func changeValueFresas(_ sender: UIStepper) {
-        labelFresas.text = Int(sender.value).description
-        addValuesToASumAndPutItIntoTheLabel()
-    }
+    */
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Stepper.wraps = true
+       /* Stepper.wraps = true
         Stepper.autorepeat = true
         Stepper.maximumValue = 2000
         Stepper.minimumValue = 0
@@ -47,7 +53,9 @@ class ViewControllerInventario: UIViewController {
         steeprFr.autorepeat = true
         steeprFr.maximumValue = 2000
         steeprFr.minimumValue = 0
-        steeprFr.wraps = true
+        steeprFr.wraps = true*/
+        tableInventario.dataSource = self
+        tableInventario.register(UINib(nibName: "tableViewCellForInventario", bundle: nil), forCellReuseIdentifier: "tableViewCellForInventario")
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,9 +63,21 @@ class ViewControllerInventario: UIViewController {
         
     }
     
-    func addValuesToASumAndPutItIntoTheLabel() {
+    /*func addValuesToASumAndPutItIntoTheLabel() {
         let summe : Int = Int(Stepper.value + steeperMZ.value + steeprFr.value)
         totalProductsLabel.text = summe.description
+    }*/
+ 
+}
+
+extension ViewControllerInventario: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return prodConter.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableInventario.dequeueReusableCell(withIdentifier: "tableViewCellForInventario", for: indexPath)
+        (cell as? tableViewCellForInventario)?.setCellForInventario(name: prodConter[indexPath.row], total: valueProd[indexPath.row])
+        return cell
+    }
 }

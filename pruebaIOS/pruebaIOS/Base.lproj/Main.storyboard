@@ -157,138 +157,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contabiliza Tus Productos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLG-pX-avW">
-                                <rect key="frame" x="26" y="87" width="322" height="61"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kp5-V4-MHr">
+                                <rect key="frame" x="0.0" y="183" width="375" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* Añade nuevos productos " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD4-k0-wQf">
-                                <rect key="frame" x="26" y="147" width="298" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* Actualice sus productos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNR-V1-gP5">
-                                <rect key="frame" x="26" y="181" width="298" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LA9-RR-Z1Z">
-                                <rect key="frame" x="26" y="244" width="322" height="403"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tus productos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIT-6X-H6U">
-                                        <rect key="frame" x="25" y="19" width="273" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRu-0O-glS">
-                                        <rect key="frame" x="25" y="93" width="101" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-lE-oVv">
-                                        <rect key="frame" x="143" y="102" width="94" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <action selector="changeValueFresas:" destination="iub-mr-kJM" eventType="valueChanged" id="vht-if-Avk"/>
-                                        </connections>
-                                    </stepper>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFV-3T-rcS">
-                                        <rect key="frame" x="247" y="106" width="51" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manzanas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-Kv-iHa">
-                                        <rect key="frame" x="25" y="142" width="101" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="3Vy-WK-shD">
-                                        <rect key="frame" x="143" y="146" width="94" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <action selector="changeValueManzanas:" destination="iub-mr-kJM" eventType="valueChanged" id="59O-O7-sAG"/>
-                                        </connections>
-                                    </stepper>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQo-Qx-VIS">
-                                        <rect key="frame" x="247" y="146" width="51" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frijoles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdM-2F-9EL">
-                                        <rect key="frame" x="25" y="191" width="101" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="J2c-Av-nMx">
-                                        <rect key="frame" x="143" y="191" width="94" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <action selector="changeValueFR:" destination="iub-mr-kJM" eventType="valueChanged" id="OtN-gQ-ydf"/>
-                                        </connections>
-                                    </stepper>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1l-jr-dV9">
-                                        <rect key="frame" x="248" y="191" width="50" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ySW-st-KjH">
-                                        <rect key="frame" x="0.0" y="346" width="322" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de tus productos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQC-gN-zMG">
-                                                <rect key="frame" x="28" y="9" width="195" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zG-ty-qWj">
-                                                <rect key="frame" x="231" y="10" width="43" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-Qh-SwA">
+                                <rect key="frame" x="0.0" y="44" width="375" height="138"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contabiliza Tus Productos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8P-fV-AHw">
+                                        <rect key="frame" x="20" y="30" width="301" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq5-8S-Mkx">
+                                        <rect key="frame" x="315" y="70" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Añade nuevos productos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbP-8B-6Bl">
+                                        <rect key="frame" x="40" y="63" width="185" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Actualiza tus productos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4q-UP-Vlf">
+                                        <rect key="frame" x="40" y="91" width="175" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVT-qp-6nF">
+                                        <rect key="frame" x="268" y="71" width="39" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" backgroundImage="plus.rectangle.fill" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40948728960000003" green="0.710855868" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="I4q-UP-Vlf" firstAttribute="top" secondItem="xbP-8B-6Bl" secondAttribute="bottom" constant="8" id="97r-uQ-q1s"/>
+                                    <constraint firstAttribute="trailing" secondItem="v8P-fV-AHw" secondAttribute="trailing" constant="54" id="UZs-kM-Tkf"/>
+                                    <constraint firstItem="xbP-8B-6Bl" firstAttribute="top" secondItem="v8P-fV-AHw" secondAttribute="bottom" constant="7.5" id="b1E-8m-kQq"/>
+                                    <constraint firstAttribute="bottom" secondItem="I4q-UP-Vlf" secondAttribute="bottom" constant="13" id="c4H-Bs-Z1q"/>
+                                    <constraint firstItem="I4q-UP-Vlf" firstAttribute="leading" secondItem="jhS-Qh-SwA" secondAttribute="leading" constant="40" id="cWZ-Qk-vh3"/>
+                                    <constraint firstItem="xbP-8B-6Bl" firstAttribute="leading" secondItem="jhS-Qh-SwA" secondAttribute="leading" constant="40" id="dae-56-l3d"/>
+                                    <constraint firstItem="I4q-UP-Vlf" firstAttribute="top" secondItem="xbP-8B-6Bl" secondAttribute="bottom" constant="8" id="rhi-pW-r04"/>
+                                    <constraint firstItem="v8P-fV-AHw" firstAttribute="top" secondItem="jhS-Qh-SwA" secondAttribute="top" constant="30" id="zVh-Z2-sId"/>
+                                    <constraint firstItem="v8P-fV-AHw" firstAttribute="leading" secondItem="jhS-Qh-SwA" secondAttribute="leading" constant="20" id="zxg-uo-qpS"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.39409715290000003" green="0.68097444640000004" blue="0.96916640229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jhS-Qh-SwA" firstAttribute="leading" secondItem="ccm-ft-9OA" secondAttribute="leading" id="q0B-hg-g3C"/>
+                            <constraint firstItem="jhS-Qh-SwA" firstAttribute="top" secondItem="ccm-ft-9OA" secondAttribute="top" id="qMP-1l-LLy"/>
+                            <constraint firstItem="jhS-Qh-SwA" firstAttribute="trailing" secondItem="ccm-ft-9OA" secondAttribute="trailing" id="w3W-BF-x7p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ccm-ft-9OA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Inventario" id="DyI-O0-mnJ"/>
                     <connections>
-                        <outlet property="Stepper" destination="1bB-lE-oVv" id="uIs-2F-JOc"/>
-                        <outlet property="labelFresas" destination="SFV-3T-rcS" id="4pf-hA-jqT"/>
-                        <outlet property="labelFrj" destination="G1l-jr-dV9" id="CCX-ZR-62b"/>
-                        <outlet property="labelManzana" destination="QQo-Qx-VIS" id="Ebq-9d-sHm"/>
-                        <outlet property="steeperMZ" destination="3Vy-WK-shD" id="qat-5H-8Ge"/>
-                        <outlet property="steeprFr" destination="J2c-Av-nMx" id="Gip-AC-xJx"/>
-                        <outlet property="totalProductsLabel" destination="5zG-ty-qWj" id="NYY-UT-mgy"/>
+                        <outlet property="tableInventario" destination="kp5-V4-MHr" id="6Ia-Vl-2uc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0o-8X-19b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -312,7 +242,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-bp-SuP">
                                 <rect key="frame" x="40" y="126.5" width="295" height="485.5"/>
                                 <color key="backgroundColor" red="0.40948728960000003" green="0.710855868" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">Global Soft´ es una empresa con centro de operaciones en la ciudad dePuebla, Puebla, México, y enfoca sus actividades en proporcionar serviciosde desarrollo de software, mantenimiento y reparación de computadoras einstalaciones de redes para su empresa.Nuestra empresa se encuentra conformada por un equipo de profesionalesen tecnologías de la información y sistemas computacionales, técnicosaltamente capacitados en reparación y mantenimiento de computadoras,Contamos con la infraestructura más innovadora de equipo de cómputo y elconocimiento necesario para cubrir las solicitudes de servicioImplementamos servicios de tecnología para su empresa.</mutableString>
+                                <string key="text">Global Soft´ es una empresa con centro de operaciones en la ciudad dePuebla, Puebla, México, y enfoca sus actividades en proporcionar serviciosde desarrollo de software, mantenimiento y reparación de computadoras einstalaciones de redes para su empresa.Nuestra empresa se encuentra conformada por un equipo de profesionalesen tecnologías de la información y sistemas computacionales, técnicosaltamente capacitados en reparación y mantenimiento de computadoras,Contamos con la infraestructura más innovadora de equipo de cómputo y elconocimiento necesario para cubrir las solicitudes de servicioImplementamos servicios de tecnología para su empresa.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -355,6 +285,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus.rectangle.fill" catalog="system" width="64" height="46"/>
         <image name="—Pngtree—creative company_1420804" width="600" height="600"/>
         <image name="—Pngtree—creative company_1421625" width="600" height="600"/>
     </resources>

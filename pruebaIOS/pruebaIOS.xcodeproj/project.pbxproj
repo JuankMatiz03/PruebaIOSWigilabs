@@ -21,6 +21,8 @@
 		72746653245E19BF0021FA7E /* viewControllerInventario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72746652245E19BF0021FA7E /* viewControllerInventario.swift */; };
 		729ED026245F430C007CAA4D /* carritoProducts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729ED025245F430C007CAA4D /* carritoProducts.storyboard */; };
 		729ED028245F4353007CAA4D /* carritoProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729ED027245F4353007CAA4D /* carritoProductsViewController.swift */; };
+		729ED038245F74AA007CAA4D /* tableViewCellForInventario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729ED036245F74AA007CAA4D /* tableViewCellForInventario.swift */; };
+		729ED039245F74AA007CAA4D /* tableViewCellForInventario.xib in Resources */ = {isa = PBXBuildFile; fileRef = 729ED037245F74AA007CAA4D /* tableViewCellForInventario.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		72746652245E19BF0021FA7E /* viewControllerInventario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerInventario.swift; sourceTree = "<group>"; };
 		729ED025245F430C007CAA4D /* carritoProducts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = carritoProducts.storyboard; sourceTree = "<group>"; };
 		729ED027245F4353007CAA4D /* carritoProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carritoProductsViewController.swift; sourceTree = "<group>"; };
+		729ED036245F74AA007CAA4D /* tableViewCellForInventario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCellForInventario.swift; sourceTree = "<group>"; };
+		729ED037245F74AA007CAA4D /* tableViewCellForInventario.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tableViewCellForInventario.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		724937B0245D18230052FA7F /* pruebaIOS */ = {
 			isa = PBXGroup;
 			children = (
+				729ED035245F7466007CAA4D /* cellInvent */,
 				72746647245DDBAF0021FA7E /* Cellgbl */,
 				724937B1245D18230052FA7F /* AppDelegate.swift */,
 				724937B3245D18230052FA7F /* SceneDelegate.swift */,
@@ -126,6 +131,15 @@
 				72746649245DDC020021FA7E /* cellProductsListTableViewCell.xib */,
 			);
 			path = Cellgbl;
+			sourceTree = "<group>";
+		};
+		729ED035245F7466007CAA4D /* cellInvent */ = {
+			isa = PBXGroup;
+			children = (
+				729ED036245F74AA007CAA4D /* tableViewCellForInventario.swift */,
+				729ED037245F74AA007CAA4D /* tableViewCellForInventario.xib */,
+			);
+			path = cellInvent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +225,7 @@
 			files = (
 				724937BE245D182A0052FA7F /* LaunchScreen.storyboard in Resources */,
 				724937BB245D182A0052FA7F /* Assets.xcassets in Resources */,
+				729ED039245F74AA007CAA4D /* tableViewCellForInventario.xib in Resources */,
 				7274664B245DDC020021FA7E /* cellProductsListTableViewCell.xib in Resources */,
 				72746642245DC0E10021FA7E /* productsList.storyboard in Resources */,
 				724937B9245D18230052FA7F /* Main.storyboard in Resources */,
@@ -232,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729ED038245F74AA007CAA4D /* tableViewCellForInventario.swift in Sources */,
 				724937B6245D18230052FA7F /* ViewController.swift in Sources */,
 				724937B2245D18230052FA7F /* AppDelegate.swift in Sources */,
 				729ED028245F4353007CAA4D /* carritoProductsViewController.swift in Sources */,
