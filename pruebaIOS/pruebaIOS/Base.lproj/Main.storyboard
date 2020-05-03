@@ -48,6 +48,10 @@
                                     <segue destination="x5g-WW-tpl" kind="showDetail" id="lYU-Ve-gkm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="—Pngtree—creative company_1420804" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-T4-u2a">
+                                <rect key="frame" x="16" y="62" width="343" height="161"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.40948728963999637" green="0.71085586800383305" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -64,6 +68,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="dzR-7z-BHz"/>
+                    <connections>
+                        <outlet property="titleAnimation" destination="re7-ek-xh8" id="KTK-9o-GdL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +120,10 @@
                                     <segue destination="iub-mr-kJM" kind="show" id="GbA-Db-qG6"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="—Pngtree—creative company_1421625" translatesAutoresizingMaskIntoConstraints="NO" id="660-1H-idN">
+                                <rect key="frame" x="27" y="434" width="321" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.3940971528685695" green="0.68097444637822913" blue="0.96916640228426398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -344,4 +355,8 @@
             <point key="canvasLocation" x="138.75" y="100.35211267605634"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="—Pngtree—creative company_1420804" width="600" height="600"/>
+        <image name="—Pngtree—creative company_1421625" width="600" height="600"/>
+    </resources>
 </document>

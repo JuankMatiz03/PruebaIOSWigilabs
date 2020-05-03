@@ -21,6 +21,28 @@ class viewControllerProducts: UIViewController{
         "uvas",
         "papaya"
     ]
+    private var disponible = [
+        "43",
+        "443",
+        "55",
+        "5432",
+        "32"
+    ]
+    private var precios = [
+        "$4000",
+        "$3100",
+        "$550",
+        "$1000",
+        "$3000"
+    ]
+    private var idProductos = [
+        "12-04",
+        "00-00",
+        "32-04",
+        "21-12",
+        "34-54",
+        "01-33"
+    ]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +67,7 @@ extension viewControllerProducts: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableList.dequeueReusableCell(withIdentifier: "cellProductsListTableViewCell", for: indexPath)
-        (cell as? cellProductsListTableViewCell)?.setUpCellPer(precio: "35", disponible: "32", nombreProd: dataSource[indexPath.row],  idProducto: "14")
+        (cell as? cellProductsListTableViewCell)?.setUpCellPer(precio: precios[indexPath.row], disponible: disponible[indexPath.row], nombreProd: dataSource[indexPath.row],  idProducto: idProductos[indexPath.row])
         cell.backgroundColor = UIColor.white
         return cell
     }
