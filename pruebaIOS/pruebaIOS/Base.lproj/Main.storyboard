@@ -15,18 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenidos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re7-ek-xh8">
-                                <rect key="frame" x="46" y="223" width="291" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="MT9-C3-GQ3"/>
-                                    <constraint firstAttribute="height" constant="60" id="zcg-ks-8vH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i76-fj-9Oq">
-                                <rect key="frame" x="123" y="307" width="129" height="40"/>
+                                <rect key="frame" x="128" y="438" width="129" height="40"/>
                                 <color key="backgroundColor" red="0.90071611815730335" green="0.93067231462156752" blue="1" alpha="0.58336900684931503" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="TaO-SU-Dbd"/>
@@ -48,20 +38,29 @@
                                     <segue destination="x5g-WW-tpl" kind="showDetail" id="lYU-Ve-gkm"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="—Pngtree—creative company_1420804" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-T4-u2a">
-                                <rect key="frame" x="16" y="62" width="343" height="161"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenidos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re7-ek-xh8">
+                                <rect key="frame" x="58" y="344" width="279" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="MT9-C3-GQ3"/>
+                                    <constraint firstAttribute="height" constant="60" id="zcg-ks-8vH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="—Pngtree—creative company_1420804" translatesAutoresizingMaskIntoConstraints="NO" id="aDf-T4-u2a">
+                                <rect key="frame" x="16" y="80" width="343" height="236"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.40948728963999637" green="0.71085586800383305" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="i76-fj-9Oq" firstAttribute="top" secondItem="re7-ek-xh8" secondAttribute="bottom" constant="24" id="OOC-se-2lX"/>
-                            <constraint firstItem="i76-fj-9Oq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="PPI-3t-cpZ"/>
+                            <constraint firstItem="HRI-te-SxH" firstAttribute="top" secondItem="i76-fj-9Oq" secondAttribute="bottom" constant="109" id="7M4-BY-Vbf"/>
+                            <constraint firstItem="i76-fj-9Oq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="PPI-3t-cpZ"/>
                             <constraint firstItem="HRI-te-SxH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="QQs-wd-XD7"/>
-                            <constraint firstItem="re7-ek-xh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="SF5-Xo-HLf"/>
+                            <constraint firstItem="re7-ek-xh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="SF5-Xo-HLf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="re7-ek-xh8" secondAttribute="trailing" constant="38" id="TXk-NY-LUy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i76-fj-9Oq" secondAttribute="trailing" constant="123" id="cFE-xt-UIo"/>
-                            <constraint firstItem="re7-ek-xh8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="179" id="mYP-f6-iNE"/>
+                            <constraint firstItem="i76-fj-9Oq" firstAttribute="top" secondItem="re7-ek-xh8" secondAttribute="bottom" constant="34" id="kKb-rT-Hj0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HRI-te-SxH" secondAttribute="bottom" constant="50" id="p3C-6d-44v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HRI-te-SxH" secondAttribute="trailing" constant="123" id="x4e-hu-zRM"/>
                         </constraints>
@@ -120,8 +119,8 @@
                                     <segue destination="iub-mr-kJM" kind="show" id="GbA-Db-qG6"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="—Pngtree—creative company_1421625" translatesAutoresizingMaskIntoConstraints="NO" id="660-1H-idN">
-                                <rect key="frame" x="27" y="434" width="321" height="193"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="—Pngtree—creative company_1421625" translatesAutoresizingMaskIntoConstraints="NO" id="660-1H-idN">
+                                <rect key="frame" x="27" y="454" width="321" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -313,7 +312,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-bp-SuP">
                                 <rect key="frame" x="40" y="126.5" width="295" height="485.5"/>
                                 <color key="backgroundColor" red="0.40948728960000003" green="0.710855868" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Global Soft´ es una empresa con centro de operaciones en la ciudad dePuebla, Puebla, México, y enfoca sus actividades en proporcionar serviciosde desarrollo de software, mantenimiento y reparación de computadoras einstalaciones de redes para su empresa.Nuestra empresa se encuentra conformada por un equipo de profesionalesen tecnologías de la información y sistemas computacionales, técnicosaltamente capacitados en reparación y mantenimiento de computadoras,Contamos con la infraestructura más innovadora de equipo de cómputo y elconocimiento necesario para cubrir las solicitudes de servicioImplementamos servicios de tecnología para su empresa.</mutableString>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
