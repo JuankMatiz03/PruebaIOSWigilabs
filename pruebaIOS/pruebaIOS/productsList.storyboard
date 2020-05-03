@@ -10,17 +10,17 @@
         <!--Productos-->
         <scene sceneID="mU6-Fh-9uv">
             <objects>
-                <viewController id="fqJ-9D-6cS" customClass="viewControllerProducts" customModule="pruebaIOS" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fqJ-9D-6cS" customClass="viewControllerProducts" customModule="pruebaIOS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s8e-Bd-AiC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mzt-Bg-mDz">
-                                <rect key="frame" x="0.0" y="123" width="375" height="544"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="495"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevos productos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQ1-Sc-LOS">
-                                <rect key="frame" x="70" y="57" width="247" height="45"/>
+                                <rect key="frame" x="70" y="13" width="247" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="247" id="H8c-AZ-AiX"/>
                                     <constraint firstAttribute="height" constant="45" id="gxM-a6-ZGg"/>
@@ -42,6 +42,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Fj-mX-HhX"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" title="Productos" id="BTw-pe-On2">
                         <barButtonItem key="leftBarButtonItem" style="done" id="WkT-m5-4ud">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" id="0AS-Wr-CSc">
@@ -55,13 +56,19 @@ CQk
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="medium" weight="semibold"/>
                                 </state>
                             </button>
+                            <connections>
+                                <segue destination="7sh-N3-shh" kind="unwind" unwindAction="fromBackViewWithSegue:" id="nQG-yL-74m"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="tableList" destination="mzt-Bg-mDz" id="siP-Yb-XT8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3l-t3-Vym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7sh-N3-shh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="759.20000000000005" y="73.313343328335833"/>
         </scene>
