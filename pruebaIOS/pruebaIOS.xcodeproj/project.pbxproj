@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720626CA245FC4B800E7729F /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720626C9245FC4B700E7729F /* CheckInternet.swift */; };
 		724937B2245D18230052FA7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724937B1245D18230052FA7F /* AppDelegate.swift */; };
 		724937B4245D18230052FA7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724937B3245D18230052FA7F /* SceneDelegate.swift */; };
 		724937B6245D18230052FA7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724937B5245D18230052FA7F /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		720626C9245FC4B700E7729F /* CheckInternet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckInternet.swift; path = ../../../../../Downloads/CheckInternet.swift; sourceTree = "<group>"; };
 		724937AE245D18230052FA7F /* pruebaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724937B1245D18230052FA7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724937B3245D18230052FA7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				72746645245DCD460021FA7E /* viewControllerProducts.swift */,
 				72746652245E19BF0021FA7E /* viewControllerInventario.swift */,
 				729ED025245F430C007CAA4D /* carritoProducts.storyboard */,
+				720626C9245FC4B700E7729F /* CheckInternet.swift */,
 				729ED027245F4353007CAA4D /* carritoProductsViewController.swift */,
 			);
 			path = pruebaIOS;
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729ED038245F74AA007CAA4D /* tableViewCellForInventario.swift in Sources */,
+				720626CA245FC4B800E7729F /* CheckInternet.swift in Sources */,
 				724937B6245D18230052FA7F /* ViewController.swift in Sources */,
 				724937B2245D18230052FA7F /* AppDelegate.swift in Sources */,
 				729ED028245F4353007CAA4D /* carritoProductsViewController.swift in Sources */,

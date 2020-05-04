@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleAnimation: UILabel!
-    
-    
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
